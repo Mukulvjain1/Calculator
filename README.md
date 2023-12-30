@@ -9,4 +9,4 @@ This is a simple calculator web app with basic arithmetic operations and percent
 - Subtraction
 - Multiplication
 - Division
-- Percentage (Currently Not working But working on it to make it functional)
+- Percentage 
