@@ -12,7 +12,7 @@ function handleEquals() {
 }
 
 function handleAC() {
-  string = ""; // Change from " " to ""
+  string = "";
 }
 
 function handleDel() {
@@ -23,7 +23,7 @@ function handlePer() {
   let lastNumIndex = string.search(/\d(?!.*\d)/);
   if (lastNumIndex !== -1) {
     let lastNum = string.substring(lastNumIndex);
-    string = string.substring(0, lastNumIndex) + lastNum / 100;
+    string = string.substring(0, lastNumIndex) + parseFloat(lastNum) / 100;
   }
 }
 
