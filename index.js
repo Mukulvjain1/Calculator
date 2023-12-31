@@ -23,7 +23,7 @@ function handlePer() {
   let lastNumIndex = string.search(/\d(?!.*\d)/);
   if (lastNumIndex !== -1) {
     let lastNum = string.substring(lastNumIndex);
-    string = string.substring(0, lastNumIndex) + parseFloat(lastNum) / 100;
+    string = string.substring(0, lastNumIndex) + lastNum / 100;
   }
 }
 
@@ -31,13 +31,13 @@ buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     let buttonValue = e.target.innerHTML.trim();
 
-    if (buttonValue == "=") {
+    if (buttonValue === "=") {
       handleEquals();
-    } else if (buttonValue == "AC") {
+    } else if (buttonValue === "AC") {
       handleAC();
-    } else if (buttonValue == "Del") {
+    } else if (buttonValue === "Del") {
       handleDel();
-    } else if (buttonValue == "%") {
+    } else if (buttonValue === "%") {
       handlePer();
     } else {
       string += buttonValue;
