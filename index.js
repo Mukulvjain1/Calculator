@@ -10,12 +10,15 @@ function handleEquals() {
     string = eval(string);
   }
 }
-function handelAC() {
-  string = "";
+
+function handleAC() {
+  string = ""; // Change from " " to ""
 }
+
 function handleDel() {
   string = string.slice(0, -1);
 }
+
 function handlePer() {
   let lastNumIndex = string.search(/\d(?!.*\d)/);
   if (lastNumIndex !== -1) {
